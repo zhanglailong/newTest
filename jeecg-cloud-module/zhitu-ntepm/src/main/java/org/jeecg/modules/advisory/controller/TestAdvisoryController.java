@@ -40,7 +40,7 @@ import io.swagger.annotations.ApiOperation;
 import org.jeecg.common.aspect.annotation.AutoLog;
 
  /**
- * @Description: 咨询业务表
+ * @Description: 咨询业务表 add
  * @Author: jeecg-boot
  * @Date:   2021-04-12
  * @Version: V1.0
