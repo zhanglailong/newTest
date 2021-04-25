@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.resourceorder.mapper.NtepmResourceorderMapper">
+<!--    根据id修改资源订单状态-->
+    <update id="updateorder_status" parameterType="org.jeecg.modules.resourceorder.entity.NtepmResourceorder">
+        UPDATE ntepm_resourceorder SET order_status = #{order_status} where id = #{id}
+    </update>
+    <!--    根据id修改资源订单支付状态-->
+    <update id="updateorder_status" parameterType="org.jeecg.modules.resourceorder.entity.NtepmResourceorder">
+        UPDATE ntepm_resourceorder SET pay_status = #{pay_status} where id = #{id}
+    </update>
+<!--    资源订单详情-->
+    <select id="selectorder" parameterType="org.jeecg.modules.resourceorder.entity.NtepmResourceorder" resultMap="">
+             select * from ntepm_resourceorder nro LEFT JOIN ntepm_resource nr ON nro.resourceid = nr.id
+    </select>
+</mapper>
