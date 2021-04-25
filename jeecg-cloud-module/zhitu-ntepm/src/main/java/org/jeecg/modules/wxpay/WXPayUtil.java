@@ -28,7 +28,7 @@ public class WXPayUtil {
     private static final Random RANDOM = new SecureRandom();
 
     /**
-     * XML格式字符串转换为Map
+     * XML格式字符串转换为Map add
      *
      * @param strXML XML字符串
      * @return XML数据转换后的Map
