@@ -29,7 +29,7 @@ public class WxPay {
 
     public String getNativeUrl(String orderNo, String price, String describe, String notifyUrl) {
         try {
-            // 生成微信「统一下单」请求数据
+            // 生成微信「统一下单」请求数据  haojiahuo
             Map<String, String> dataMap = new HashMap<>(16);
             //公证号id  微信支付分配的公众号id
             dataMap.put("appid", wxPayConfig.getAppId());
